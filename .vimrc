@@ -36,6 +36,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'kien/ctrlp.vim'  
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -80,3 +82,9 @@ set completeopt-=preview
 " Montrar status - airline o tempos todo
 set laststatus=2
 set number
+
+" Typescript configuration for YouCompleteMe
+if !exists("g:ycm_semantic_triggers")
+    let g:ycm_semantic_triggers = {}
+  endif
+  let g:ycm_semantic_triggers['typescript'] = ['.']
