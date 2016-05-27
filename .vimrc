@@ -38,6 +38,8 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'kien/ctrlp.vim'  
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Quramy/vim-js-pretty-template'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -85,6 +87,10 @@ set number
 
 " Typescript configuration for YouCompleteMe
 if !exists("g:ycm_semantic_triggers")
-    let g:ycm_semantic_triggers = {}
-  endif
-  let g:ycm_semantic_triggers['typescript'] = ['.']
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
+let g:syntastic_typescript_tsc_args = "--experimentalDecorators"
+let g:syntastic_typescript_tsc_fname = ''
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'

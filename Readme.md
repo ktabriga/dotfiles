@@ -4,5 +4,6 @@ Open YouComplete.
 
 Open tern_for_vim and run npm install.
 Open Tsuquyomi and run npm install.
+Open vimproc and run make
 
 Clone https://github.com/Lokaltog/vim-distinguished/blob/develop/colors/distinguished.vim for colors.
