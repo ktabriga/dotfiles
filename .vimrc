@@ -40,6 +40,10 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Quramy/vim-js-pretty-template'
+Plugin 'mattn/emmet-vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'othree/html5.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -56,10 +60,11 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 "Configura cores
-set t_Co=256
 syntax on
+"set t_Co=256
+"let g:solarized_termcolors=256
 set background=dark
-colorscheme distinguished
+colorscheme solarized
 
 "configura identação
 set expandtab
@@ -84,6 +89,7 @@ set completeopt-=preview
 " Montrar status - airline o tempos todo
 set laststatus=2
 set number
+set ruler
 
 " Typescript configuration for YouCompleteMe
 if !exists("g:ycm_semantic_triggers")
