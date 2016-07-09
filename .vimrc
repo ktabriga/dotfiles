@@ -63,6 +63,8 @@ filetype plugin indent on    " required
 syntax on
 "set t_Co=256
 "let g:solarized_termcolors=256
+set t_Co=16
+let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
 
@@ -72,6 +74,8 @@ set shiftwidth=2
 set softtabstop=2
 
 imap <C-c> <CR><Esc>O
+map <F7> :tabp<cr>
+map <F8> :tabn<cr>
 
  
 " This does what it says on the tin. It will check your file on open too, not just on save.
