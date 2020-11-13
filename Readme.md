@@ -1,9 +1,8 @@
-Open YouComplete.
-* install cmake
-* ./install.py --tern-completer
+# My Dev stack
+* NeoVim
+* Tmux
+* Alacritty Terminal
+* Shell: Fish, Oh my fish and bob the fish
 
-Open tern_for_vim and run npm install.
-Open Tsuquyomi and run npm install.
-Open vimproc and run make
 
-Clone https://github.com/Lokaltog/vim-distinguished/blob/develop/colors/distinguished.vim for colors.
+
