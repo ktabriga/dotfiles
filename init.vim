@@ -7,6 +7,7 @@ call plug#begin()
 Plug 'chriskempson/base16-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 
 " syntax highlighting
@@ -61,6 +62,10 @@ Plug 'marijnh/tern_for_vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'dense-analysis/ale'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'branch': 'release/0.x'
+  \ }
 
 " Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
@@ -80,6 +85,13 @@ Plug 'dart-lang/dart-vim-plugin'
 " Editor Config
 Plug 'editorconfig/editorconfig-vim'
 
+" graphql
+Plug 'jparise/vim-graphql'
+
+" prisma
+Plug 'pantharshit00/vim-prisma'
+
+
 call plug#end()
 " }}} vim-plug
 
@@ -93,6 +105,7 @@ if (has("termguicolors"))
 "colorscheme OceanicNext
 "colorscheme base16-default-dark
 colorscheme gruvbox
+" set background=dark
 set background=dark
 " }}} Colors
 
